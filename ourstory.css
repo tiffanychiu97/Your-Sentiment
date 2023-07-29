@@ -235,7 +235,7 @@ footer{
 
 
   @media screen and (max-width: 767px){
-	.bread-crumb-wrap a{
+	/* .bread-crumb-wrap a{
 		font-size: 14px;
 	}
 	.bread-crumb-wrap li + li::before{
@@ -245,6 +245,9 @@ footer{
 	}
 	.bread-crumb-wrap li + li{
 		padding-left: 5px;
+	} */
+	.bread-crumb-wrap{
+		display: none;
 	}
 	header a{
 		font-size: 12px;
