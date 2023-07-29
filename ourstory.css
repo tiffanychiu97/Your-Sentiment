@@ -255,20 +255,20 @@ footer{
 	.banner img{
 		margin: 5% auto 5%;
 	}
-	.container, .footer-container, .wrap{
+	.mw-1260{
 		max-width: 720px;
 	}
 	.txt-pic{
 		padding: 0% 1%;
 	}
 	.txt{
-		width: 100%;
+		width: 90%;
 		margin-bottom: 5%;
 	}
 	.pic{
 		width: 100%;
 	}
 	.txt p{
-		font-size: 14px;
+		font-size: 16px;
 	}
   }
