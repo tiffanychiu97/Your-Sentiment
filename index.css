@@ -195,7 +195,7 @@ nav{
 /* 裝置layout */
 .devices{
 	display: flex;
-	margin-bottom: -10px;
+	margin-bottom: -50px;
 }
 .devices-card-layout{
 	width: 60%;
@@ -378,22 +378,23 @@ nav{
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	padding-top: 80px;
 	padding-bottom: 55px;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 .sleep-intro-txt p{
 	color: #3E4459;
 	font-size: 1.0625em;
-	line-height: 30px;
-	margin-top: -50px;
+	line-height: 1.764705;
+	margin-top: 50px;
+	margin-bottom: 70px;
 }
 .sleep-intro-txt h3{
 	color: #3E4459;
 	font-size: 1.875em;
-	line-height: 1.875em;
+	line-height: 1.2;
 }
 .sleep-intro-txt a{
 	align-self: flex-end;
@@ -473,7 +474,7 @@ footer{
 	.intro p{
 		width: 90%;
 	}
-	.devices .intro-personalization{
+	.devices, .intro-personalization, .sleep-intro{
 		flex-wrap: wrap;
 	}
 	.devices-card-layout, .devices-text, .intro-personalization-text, .intro-personalization-pic{
@@ -483,5 +484,9 @@ footer{
 	.devices-text{
 		padding-top: 1%;
 		padding-right: 0;
+	}
+	.sleep-intro-pic, .sleep-intro-txt{
+		width: 90%;
+		margin: 0 auto;
 	}
 }
