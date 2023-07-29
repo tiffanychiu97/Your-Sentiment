@@ -26,8 +26,8 @@ img{
 .ma-0{
 	margin: 0 auto;
 }
-.mw-1200{
-	max-width: 1200px;
+.mw-1260{
+	max-width: 1260px;
 }
 /* header */
 header{
@@ -142,11 +142,15 @@ nav{
     position: absolute;
     inset: 0;
     margin: 12% auto;
-    animation: slidedown .8s ease-in-out;
+    animation: slidedown 1s ease-in-out, fadein 1s ease-in; 
 }
 @keyframes slidedown{
     from{transform: translateY(-100%);
     to{transform: translateY(0);}}
+}
+@keyframes fadein{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
 }
 .category{
     margin: 75px auto 85px;

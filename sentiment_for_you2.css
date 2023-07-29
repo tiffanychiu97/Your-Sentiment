@@ -22,8 +22,8 @@ h3{
 .ma-0{
 	margin: 0 auto;
 }
-.mw-1200{
-	max-width: 1200px;
+.mw-1260{
+	max-width: 1260px;
 }
 
 /* header */
@@ -465,4 +465,10 @@ footer{
 	color: #9F9F9F;
 	text-align: center;
 	margin-bottom: 20px;
+  }
+
+ @media screen and (min-width: 1440px) {
+	.call-to-action{
+        width: 33%;
+    }
   }

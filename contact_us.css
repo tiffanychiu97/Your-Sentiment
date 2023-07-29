@@ -18,8 +18,8 @@ a{
 .ma-0{
     margin: 0 auto;
 }
-.mw-1200{
-    max-width: 1200px;
+.mw-1260{
+    max-width: 1260px;
 }
 /* header */
 header{
@@ -130,7 +130,7 @@ h1{
     animation: slidedown .6s ease-in-out;
 }
 .main-container{
-    max-width: 690px;
+    max-width: 550px;
     margin: 0 auto;
 }
 h2{
@@ -166,14 +166,12 @@ input:focus, textarea:focus, select:focus{
     border: 1px solid #3E4459;
 }
 textarea{
-    width: 685px;
     height: 100px;
     resize: vertical;
 }
 .file-upload{
     position: relative;
     border: 1px solid #3E4459;
-    width: 685px;
     border-radius: 4px;
 }
 .file-upload span{

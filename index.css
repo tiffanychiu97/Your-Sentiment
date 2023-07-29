@@ -20,8 +20,8 @@ a{
 .ma-0{
 	margin: 0 auto;
 }
-.mw-1200{
-	max-width: 1200px;
+.mw-1260{
+	max-width: 1260px;
 }
 /* header */
 header{
@@ -61,6 +61,9 @@ nav{
 .menu li{
 	padding: 2rem 1.5rem;
 }
+.menu li a{
+	display: block;
+}
 .menu li:hover > a{
 	transform: translateY(-5px);
 	border-bottom: 2px solid rgba(163, 186, 217, .7);
@@ -91,7 +94,7 @@ nav{
 	z-index: 2;
 	/* flex-shrink: 0; */
 	/* box-sizing: border-box; */
-	padding: 10.2%;
+	padding: 11.3%;
 	animation: fadein 1.3s ease-in;
 }
 .banner h1{
@@ -152,7 +155,7 @@ nav{
 	position: relative;
 	display: inline-block;
 }
- .intro span::after{
+.intro span::after{
 	content: '';
 	width: 100%;
 	height: 20px;
@@ -187,6 +190,7 @@ nav{
 	height: 44px;
 	inset: 0;
 	margin: auto;
+	text-shadow: #666 0.08em 0.08em 0.1em;
 }
 /* 裝置layout */
 .devices{
@@ -201,20 +205,20 @@ nav{
 	width: 35.416667%;
 	position: relative;
 	left: 8.611111%;
-	box-shadow: 10px 5px 5px #90908e;
+	box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card-layout div:nth-child(2){
 	width: 41.25%;
 	position: relative;
 	left: 39.1666%;
 	bottom: 8.611111%;
-	box-shadow: -10px 5px 5px #90908e;
+	box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card-layout div:nth-child(3){
 	width: 44.861111%;
 	position: relative;
 	bottom: 16.11111%;
-	box-shadow: 7px 5px 5px #90908e;
+	box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card{
 	border-radius: 5px;
@@ -366,6 +370,9 @@ nav{
 .sleep-intro-pic{
 	width: 47.75%;
 }
+.sleep-intro-pic img{
+	width: 100%;
+}
 .sleep-intro-txt{
 	width: 35.416667%;
 	background-color: #fff;
@@ -458,4 +465,23 @@ footer{
 		color: #3E4459;
 	}
 
+}
+@media screen and (max-width: 767px) {
+	.container, .intro, .devices, .intro-personalization{
+		max-width: 720px;
+	}
+	.intro p{
+		width: 90%;
+	}
+	.devices .intro-personalization{
+		flex-wrap: wrap;
+	}
+	.devices-card-layout, .devices-text, .intro-personalization-text, .intro-personalization-pic{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.devices-text{
+		padding-top: 1%;
+		padding-right: 0;
+	}
 }
