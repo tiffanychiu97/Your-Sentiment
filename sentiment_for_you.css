@@ -5,6 +5,9 @@
     --main-font-family: 'Roboto Serif', serif;
     --second-font-family: 'Montserrat', sans-serif;
 }
+*{
+    outline: 1px solid red;
+}
 body{
     background-color: #F7F5F2;
 	font-family: 'Roboto Serif', serif;
@@ -339,28 +342,32 @@ nav{
 	font-family: 'Inter', sans-serif;
 }
 /* 圖片幻燈片 */
-.carousel h3{
+.mode-slider h3{
     margin-bottom: 65px;
     text-align: center;
 }
-.mode-img-group{
+/* .slider{
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     overflow: hidden;
+} */
+.slider{
+    display: flex;
+    /* max-width: 100%; */
 }
-.mode-img-group li{
-    width: 21%;
-    margin: 0 2%;
-    flex-shrink: 0;
-    opacity: .7;
+.slider .slide-pic picture{
+    width: 100px;
+    /* margin: 0 2%; */
+    /* flex-shrink: 0; */
+    /* opacity: .7; */
 }
-.mode-img-group li.active {
+.slider .slide-pic.center {
     opacity: 1;
 }
-.mode-img-group li img{
-    width: 100%;
+.slider .slide-pic img{
+    max-width: 100%;
     vertical-align: top;
 }
 .arrow{

@@ -84,6 +84,9 @@ nav{
 .explore:hover ul{
 	display: block;
 }
+.main-header{
+	display: none;
+}
 /* banner */
 .banner{
 	display: flex;
@@ -461,6 +464,10 @@ footer{
 	text-align: center;
 	margin-bottom: 20px;
   }
+
+
+
+/* RWD */
 @media screen and (max-width: 1200px) {
 	.banner span{
 		color: #3E4459;
@@ -468,14 +475,32 @@ footer{
 
 }
 @media screen and (max-width: 767px) {
-	.container, .intro, .devices, .intro-personalization{
+	.container{
+		display: none;
+	}
+	.main-header{
+		display: flex;
+	}
+	.banner, .intro, .devices, .intro-personalization{
 		max-width: 720px;
 	}
 	.intro p{
 		width: 90%;
 	}
-	.devices, .intro-personalization, .sleep-intro{
+	.banner, .devices, .intro-personalization, .sleep-intro{
 		flex-wrap: wrap;
+	}
+	.banner > :first-child{
+		margin-right: 0;
+	}
+	.banner-text{
+		width: 100%;
+		margin: 0 auto;
+		background-image: url(image/index/banner-edit.jpg);
+		background-position: center;
+	}
+	.banner-pic{
+		display: none;
 	}
 	.devices-card-layout, .devices-text, .intro-personalization-text, .intro-personalization-pic{
 		width: 90%;

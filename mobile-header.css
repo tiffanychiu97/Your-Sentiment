@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #3E4459;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+header{
+    background-color: #F7F5F2;
+    min-width: 100%;
+}
+.main-header{
+    max-width: 720px;
+    padding: 5px 10px;
+    background-color: #F7F5F2;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main-header .logo{
+    width: 40px;
+}
+.hb{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.hb span{
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #3E4459;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+.hb span:nth-child(1){
+    translate: 0px -10px;
+    rotate: 0deg;
+    transition: rotate 0.3s 0s,
+                translate 0.3s 0.3s;
+} 
+.hb span:nth-child(2){
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+.hb span:nth-child(3){
+    translate: 0px 10px;
+    rotate: 0deg;
+    transition: rotate 0.3s 0s,
+                translate 0.3s 0.3s;
+}
+.hb.isactive span:nth-child(1) {
+    rotate: 45deg;
+    translate: 0px 0px;
+    transition: translate 0.3s 0.3s, 
+                rotate 0.3s 0.6s;
+}
+.hb.isactive span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.hb.isactive span:nth-child(3) {
+    rotate: -45deg;
+    translate: 0px 0px;
+    transition: translate 0.3s 0.3s, 
+                rotate 0.3s 0.6s;
+}
+.main-nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    animation: fadeout .6s ease-in-out;
+}
+
+.main-nav.active {
+    display: block;
+    animation: fadein .6s ease-in-out;
+}
+
+@keyframes fadein {
+    from{transform: translateX(-100%); opacity: 0;}
+    to {transform: translateX(0%); opacity: 1;}
+    }
+@keyframes fadeout {
+    from{transform: translateX(0%); opacity: 1;}
+    to {transform: translateX(-100%); opacity: 0;}
+    }
+.main-nav a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Roboto Serif', serif;;
+}
