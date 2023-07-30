@@ -498,6 +498,7 @@ footer{
 		margin: 0 auto;
 		background-image: url(image/index/banner-edit.jpg);
 		background-position: center;
+		background-size: cover;
 	}
 	.banner-pic{
 		display: none;
