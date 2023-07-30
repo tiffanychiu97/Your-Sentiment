@@ -475,7 +475,7 @@ footer{
 
 }
 @media screen and (max-width: 767px) {
-	.container{
+	.web-header{
 		display: none;
 	}
 	.main-header{
