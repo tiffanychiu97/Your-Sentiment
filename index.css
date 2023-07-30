@@ -480,6 +480,7 @@ footer{
 	}
 	.main-header{
 		display: flex;
+		z-index: 10;
 	}
 	.banner, .intro, .devices, .intro-personalization{
 		max-width: 720px;
