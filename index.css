@@ -32,6 +32,9 @@ header{
     top: 0;
     z-index: 5;
 }
+.main-header{
+	display: none;
+}
 .container{
     display: flex;
 	justify-content: space-between;
@@ -306,7 +309,7 @@ nav{
 	to{transform: translateX(-100%)}
   }
   
-  @keyframes scroll2{
+@keyframes scroll2{
 	from{transform: translateX(0%)}
 	to{transform: translateX(-200%)}
   }
@@ -475,11 +478,11 @@ footer{
 	}
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px){ 
 	.web-header{
 		display: none;
 	}
-	header .main-header{
+	.main-header{
 		display: flex;
 		z-index: 10;
 	}
@@ -517,7 +520,7 @@ footer{
 	.banner-pic{
 		display: none;
 	}
-	devices{
+	.devices{
 		margin-bottom: 0;
 	}
 	.devices-card-layout, .devices-text, .intro-personalization-text, .intro-personalization-pic{
