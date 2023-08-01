@@ -103,7 +103,7 @@ nav{
 .banner h1{
 	margin-top: 16.666666%;
 	margin-bottom: 1.666666%;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	font-weight: 500;
 	color: #3E4459;
 }
@@ -111,6 +111,7 @@ nav{
 	color: #ffffff;
 }
 .banner-text p{
+	font-size: 1rem;
 	color: #101926;
 	line-height: 1.5;
 	width: 60%;
@@ -189,7 +190,7 @@ nav{
 	font-weight: 500;
 	position: absolute;
 	text-align: center;
-	width: 600px;
+	width: 47.493529%;
 	height: 44px;
 	inset: 0;
 	margin: auto;
@@ -382,17 +383,17 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 80px;
-	padding-bottom: 55px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-top: 6.349206%;
+    padding-bottom: 4.365079%;
+    padding-left: 3.174603%;
+    padding-right: 3.174603%;
 }
 .sleep-intro-txt p{
 	color: #3E4459;
 	font-size: 1.0625em;
 	line-height: 1.764705;
-	margin-top: 50px;
-	margin-bottom: 70px;
+	margin-top: 13.651877%;
+    margin-bottom: 19.112628%;
 }
 .sleep-intro-txt h3{
 	color: #3E4459;
@@ -478,7 +479,7 @@ footer{
 	.web-header{
 		display: none;
 	}
-	.main-header{
+	header .main-header{
 		display: flex;
 		z-index: 10;
 	}
@@ -504,7 +505,7 @@ footer{
 	.banner h1{
 		margin-top: 2%;
 		margin-bottom: 1.666666%;
-		font-size: 2.5em;
+		font-size: 2em;
 		font-weight: 500;
 		color: #3E4459;
 	}
