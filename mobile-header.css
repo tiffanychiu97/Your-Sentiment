@@ -11,7 +11,6 @@ img{
 }
 header{
     background-color: #F7F5F2;
-    min-width: 100%;
 }
 .main-header{
     max-width: 720px;
@@ -77,19 +76,19 @@ header{
     background-color: #fff;
     top: 100%;
     left: 0;
-    animation: fadeout .6s ease-in-out;
+    animation: hb-fadeout .6s ease-in-out;
 }
 
 .main-nav.active {
     display: block;
-    animation: fadein .6s ease-in-out;
+    animation: hb-fadein .6s ease-in-out;
 }
 
-@keyframes fadein {
+@keyframes hb-fadein {
     from{transform: translateX(-100%); opacity: 0;}
     to {transform: translateX(0%); opacity: 1;}
     }
-@keyframes fadeout {
+@keyframes hb-fadeout {
     from{transform: translateX(0%); opacity: 1;}
     to {transform: translateX(-100%); opacity: 0;}
     }
