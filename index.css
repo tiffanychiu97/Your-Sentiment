@@ -293,7 +293,7 @@ nav{
 	width: 200%;
 	white-space:pre;
 	color: #a3bad91a;
-	font-size: 144px;
+	font-size: 9rem;
 	font-family: 'Roboto', sans-serif;
 	animation: scroll 40s linear infinite;
 }
@@ -517,6 +517,9 @@ footer{
 	.banner-pic{
 		display: none;
 	}
+	devices{
+		margin-bottom: 0;
+	}
 	.devices-card-layout, .devices-text, .intro-personalization-text, .intro-personalization-pic{
 		width: 90%;
 		margin: 0 auto;
@@ -524,6 +527,9 @@ footer{
 	.devices-text{
 		padding-top: 1%;
 		padding-right: 0;
+	}
+	.deco-line p{
+		width: 50%;
 	}
 	.sleep-intro-pic, .sleep-intro-txt{
 		width: 90%;
