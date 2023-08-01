@@ -76,19 +76,19 @@ header{
     background-color: #fff;
     top: 100%;
     left: 0;
-    animation: hb-fadeout .6s ease-in-out;
+    animation: hbfadeout .6s ease-in-out;
 }
 
 .main-nav.active {
     display: block;
-    animation: hb-fadein .6s ease-in-out;
+    animation: hbfadein .6s ease-in-out;
 }
 
-@keyframes hb-fadein {
+@keyframes hbfadein {
     from{transform: translateX(-100%); opacity: 0;}
     to {transform: translateX(0%); opacity: 1;}
     }
-@keyframes hb-fadeout {
+@keyframes hbfadeout {
     from{transform: translateX(0%); opacity: 1;}
     to {transform: translateX(-100%); opacity: 0;}
     }
