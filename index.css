@@ -35,18 +35,16 @@ header{
 .container{
     display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 0.8% 4.5%;
 }
 .logo{
 	width: 82px;
-	margin-top: 10px;
-	margin-left: 10%;
+	/* margin-left: 10%; */
 }
 .logo img{
 	width: 100%;
 	display: block; 
-}
-nav{
-	padding-right: 5%;
 }
 .menu{
 	display: flex;
@@ -148,7 +146,8 @@ nav{
 }
 .intro p{
 	margin-top: 2.916667%;
-	width: 50%;
+	max-width: 557px;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	color: #3E4459;
@@ -189,7 +188,6 @@ nav{
 	font-weight: 500;
 	position: absolute;
 	text-align: center;
-	width: 47.493529%;
 	height: 44px;
 	inset: 0;
 	margin: auto;
@@ -198,7 +196,6 @@ nav{
 /* 裝置layout */
 .devices{
 	display: flex;
-	margin-bottom: -50px;
 }
 .devices-card-layout{
 	width: 60%;
@@ -232,9 +229,12 @@ nav{
 	display: block;
 }
 .devices-text{
-	padding-top: 300px;
 	width: 40%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	padding-right: 6.6%;
+	padding-bottom: 8%;
 }
 .devices-text p{
 	font-size: 1.5625em;
@@ -250,7 +250,7 @@ nav{
 	height: auto;
 	position: absolute;
 	top: -2.625em;
-	left: -1em;
+	left: -4%;
 }
 .devices-text p::after{
 	content: url(image/index/Vector.svg);
@@ -260,7 +260,7 @@ nav{
 	transform: scaleX(-1);
 	position: absolute;
 	bottom: -2.625em;
-	right: -.5em;
+	right: -2%;
 }
 .learn-more-btn{
 	background-color: #3E4459;
@@ -289,7 +289,7 @@ nav{
 	overflow: hidden;
 }
 .deco-line p{
-	width: 200%;
+	/* width: 200%; */
 	white-space:pre;
 	color: #a3bad91a;
 	font-size: 9rem;
@@ -330,7 +330,7 @@ nav{
 .intro-personalization-text p{
 	font-size: 1.0625em;
 	color: #3E4459;
-	line-height: 30px;
+	line-height: 1.7647;
 	margin-bottom: 60px;
 }
 .intro-personalization-pic{
@@ -474,7 +474,7 @@ footer{
 	}
 
 }
-@media screen and (min-width: 400px) and (max-width: 767px){ 
+@media screen and (max-width: 1055.33px) {
 	.menu{
 		display: none;
 		background-color: white;
@@ -555,15 +555,20 @@ footer{
 	  border-top: #3E4459 1px;
 	}
 
-	
-	.banner, .intro, .devices, .intro-personalization{
+}
+
+@media screen and (max-width: 767px){ 
+	.banner, .intro, .devices, .intro-personalization, .sleep-intro{
+		flex-wrap: wrap;
+	}
+	.mw-1260{
 		max-width: 720px;
 	}
-	.intro p{
-		width: 90%;
+	.logo{
+		width: 60px;
 	}
-	.banner, .devices, .intro-personalization, .sleep-intro{
-		flex-wrap: wrap;
+	.container{
+		padding: 2% 5%;
 	}
 	.banner > :first-child{
 		margin-right: 0;
@@ -590,6 +595,10 @@ footer{
 	.banner-pic{
 		display: none;
 	}
+	
+	.intro p{
+		line-height: 1.5;
+	}
 	.devices{
 		margin-bottom: 0;
 	}
@@ -598,14 +607,46 @@ footer{
 		margin: 0 auto;
 	}
 	.devices-text{
-		padding-top: 1%;
 		padding-right: 0;
 	}
-	.deco-line p{
-		width: 50%;
+	.intro-personalization-pic{
+		display: none;
 	}
+	
 	.sleep-intro-pic, .sleep-intro-txt{
 		width: 90%;
 		margin: 0 auto;
+	}
+	.sleep-intro-txt p {
+		margin-top: 5%;
+		margin-bottom: 7%;
+	}
+
+
+
+
+	.footer-list-group{
+		flex-direction: column;
+	}
+	.footer-list + .footer-list .footer-list-item{
+		display: none;
+	}
+	/* .footer-list:last-child .footer-list-item form{
+		display: block;
+	} */
+}
+
+@media screen and (max-width: 414px){
+	.mw-1260{
+		max-width: 400px;
+	}
+	.intro-pic p{
+		font-size: 1.2rem;
+	}
+	.devices-text{
+		padding-top: 7% ;
+	}
+	.intro-personalization-text p{
+		line-height: 1.5;
 	}
 }
