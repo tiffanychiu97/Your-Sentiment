@@ -1,89 +1,4 @@
 @import url("reset.css");
-/* RWD reset */
-img{
-	max-width:100%;
-	height:auto;
-}
-/* 全域border-box */
-*,*::before,*::after{
-	box-sizing: border-box;
-}
-
-body{
-    background-color: #F7F5F2;
-	font-family: 'Roboto Serif', serif;
-}
-a{
-	text-decoration: none;
-}
-
-.ma-0{
-	margin: 0 auto;
-}
-.mw-1260{
-	max-width: 1260px;
-}
-/* header */
-header{
-    width: 100%;
-    background-color: #F7F5F2;
-    box-shadow: 0 5px 7px #d9d9d9;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-}
-.container{
-    display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.8% 4.5%;
-}
-.logo{
-	width: 82px;
-	/* margin-left: 10%; */
-}
-.logo img{
-	width: 100%;
-	display: block; 
-}
-.menu{
-	display: flex;
-}
-.menu a{
-	color:#3E4459;
-	font-size: 0.875rem;
-	transition:  transform .6s, border-bottom .8s;
-	border-bottom: 2px solid rgba(163, 186, 217, 0);
-}
-.menu li{
-	padding: 2rem 1.5rem;
-}
-.menu li a{
-	display: block;
-}
-.menu li:hover > a{
-	transform: translateY(-5px);
-	border-bottom: 2px solid rgba(163, 186, 217, .7);
-}
-.explore{
-	position: relative;
-}
-.explore ul{
-	display: none;
-	width: 115%;
-	position: absolute;
-	top: 100%;
-	left:0;
-	background-color: rgb(255, 255, 255, .7);
-	backdrop-filter: blur(3px);
-	border-radius: 0 0 5px 5px;
-}
-.explore:hover ul{
-	display: block;
-}
-.hb{
-	display: none;
-}
 /* banner */
 .banner{
 	display: flex;
@@ -262,26 +177,7 @@ header{
 	bottom: -2.625em;
 	right: -2%;
 }
-.learn-more-btn{
-	background-color: #3E4459;
-	color: #ffffff;
-	border-radius: 20px;
-	width: 160px;
-	padding: 15px 25px;
-	border: none;
-	font-size: 16px;
-	font-family: 'Inter', sans-serif;
-}
-.learn-more-btn:hover{
-	background-color: #ffffff;
-	color: #3E4459;
-	border-radius: 20px;
-	width: 160px;
-	padding: 15px 25px;
-	border: 1px solid #3E4459;
-	font-size: 16px;
-	font-family: 'Inter', sans-serif;
-}
+
 /* 跑馬燈裝飾線 */
 .deco-line{
 	display: flex;
@@ -406,64 +302,6 @@ header{
   	position: relative;
   	top:6px;
 }
-footer{
-	background-color: #F7F5F2;
-	color: #3E4459;
-	font-family:'Roboto Serif', serif;
-	margin-top: 50px;
-  }
-  a{
-	text-decoration: none;
-	color: #3E4459;
-  }
-  /* .footer-container{
-	padding: 100px 10%;
-  } */
-  .footer-list-group{
-	display: flex;
-	padding: 35px 10%;
-	justify-content: space-between;
-  }
-  .footer-list:first-child .footer-list-item ul{
-	display: flex;
-	justify-content: space-around;
-  }
-  .footer-list-title{
-	margin-bottom: 16px;
-  }
-  .mt5{
-	margin-top: 7px;
-  }
-  label{
-	/* line-height: 1.4375em; */
-	padding: 0px;
-	display: block;
-	max-width: 100%;
-
-}
-  input{
-	width: 300px;
-	border: none;
-	outline:none;
-	background: none;
-	height: 2em;
-  }
-  input[type="email"]{
-	border-bottom: 1px solid #3E4459;
-  }
-  button{
-	border: none;
-	background-color: transparent;
-  }
-  button:hover{
-	cursor: pointer;
-  }
-  .copyright{
-	font-size: 14px;
-	color: #9F9F9F;
-	text-align: center;
-	margin-bottom: 20px;
-  }
 
 
 
@@ -575,9 +413,12 @@ footer{
 	}
 	.banner-text{
 		width: 100%;
+		height: 100vh;
+		padding-top: 35vh;
+		padding-left: 21%;
 		margin: 0 auto;
 		background-image: url(image/index/banner-edit.jpg);
-		background-position: center;
+		background-position: top;
 		background-size: cover;
 	}
 	.banner h1{
@@ -639,6 +480,9 @@ footer{
 @media screen and (max-width: 414px){
 	.mw-1260{
 		max-width: 400px;
+	}
+	.banner-text{
+		padding-top: 40vh;
 	}
 	.intro-pic p{
 		font-size: 1.2rem;
