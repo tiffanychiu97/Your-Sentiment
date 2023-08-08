@@ -5,9 +5,7 @@
     --main-font-family: 'Roboto Serif', serif;
     --second-font-family: 'Montserrat', sans-serif;
 }
-*{
-    outline: 1px solid red;
-}
+
 body{
     background-color: #F7F5F2;
 	font-family: 'Roboto Serif', serif;
@@ -357,12 +355,6 @@ nav{
     display: flex;
     /* max-width: 100%; */
 }
-.slider .slide-pic picture{
-    width: 100px;
-    /* margin: 0 2%; */
-    /* flex-shrink: 0; */
-    /* opacity: .7; */
-}
 .slider .slide-pic.center {
     opacity: 1;
 }
@@ -478,4 +470,7 @@ footer{
 	.call-to-action{
         width: 33%;
     }
+  }
+  @media screen and (max-width: 767px){
+    
   }

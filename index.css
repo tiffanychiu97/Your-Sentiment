@@ -1,10 +1,9 @@
-@import url("reset.css");
 /* banner */
 .banner{
 	display: flex;
 }
 .banner-text{
-	width: 89%;
+	width: 87%;
 	position: relative;
 	z-index: 2;
 	/* flex-shrink: 0; */
@@ -17,26 +16,46 @@
 	margin-bottom: 1.666666%;
 	font-size: 2.5rem;
 	font-weight: 500;
-	color: #3E4459;
-}
-.banner span{
 	color: #ffffff;
 }
 .banner-text p{
 	font-size: 1rem;
 	color: #101926;
 	line-height: 1.5;
-	width: 60%;
+	width: 50%;
+}
+.banner-text .text1{
+	position: relative;
+	width: 100%;
+}
+.banner-text .text2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31.8%;
+    overflow: hidden;
+}
+.banner .text-dark-blue{
+	color:#3E4459;
+	margin: 0;
+}
+.text2 h1{
+	width: 314%;
 }
 .banner-pic{
-	width: 60%;
+	width: 70%;
 }
 .banner img{
-	width: 100%;
+	max-width: 100%;
 	display: block;
+	
 }
 .banner > :first-child{
-	margin-right: -55%;
+	margin-right: -54.45%;
+}
+@keyframes fadein {
+    from{ opacity: 0; }
+    to{ opacity: 1; }
 }
 /* intro */
 .intro{
@@ -83,10 +102,7 @@
 	top: 20px;
 	z-index: -1;
 }
-@keyframes fadein {
-    from{ opacity: 0; }
-    to{ opacity: 1; }
-}
+
 /* 滿版圖片 */
 .intro-pic{
 	position: relative;
@@ -99,14 +115,14 @@
 }
 .intro-pic p{
 	color: #ffffff;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 500;
 	position: absolute;
 	text-align: center;
 	height: 44px;
 	inset: 0;
 	margin: auto;
-	text-shadow: #666 0.08em 0.08em 0.1em;
+	text-shadow: #666 0.03em 0.03em 0.1em;
 }
 /* 裝置layout */
 .devices{
@@ -210,6 +226,7 @@
 	display: flex;
 	padding-bottom: 85px;
 	background-image: url(image/index/bgc-noise-warm.jpg);
+	overflow: hidden;
 }
 .intro-personalization-text{
 	width: 53%;
@@ -241,7 +258,7 @@
 .carousel{
 	display: flex;
 	max-width: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* overflow-x: scroll;
 	cursor: grab; */
 	margin-bottom: 100px;
@@ -251,15 +268,17 @@
 	width: 425px;
 	margin: 5% 2%;
 	flex-shrink: 0;
-	overflow: hidden;
+	top: 0 !important;
+	position: initial !important;
+	/* overflow: hidden; */
 }
 .carousel-item img{
 	max-width: 100%;
 	display: block;
-	transition: transform .6s ease;;
+	transition: transform .6s ease;
 }
-.carousel-item:hover img{
-	transform: scale(1.15);
+body::-webkit-scrollbar {
+    display: none;
 }
 /* 睡眠 */
 .sleep-intro{
@@ -315,7 +334,6 @@
 @media screen and (max-width: 1055.33px) {
 	.menu{
 		display: none;
-		background-color: white;
 		position: absolute;
 		width: 100%;
 		background-color: #fff;
@@ -394,8 +412,17 @@
 	}
 
 }
+@media screen and (max-width: 1020px){
+    .footer-list{
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    footer .footer-list-title-mt{
+      margin-top: 50px;
+    }
+}
 
-@media screen and (max-width: 767px){ 
+@media screen and (max-width: 768px){ 
 	.banner, .intro, .devices, .intro-personalization, .sleep-intro{
 		flex-wrap: wrap;
 	}
@@ -463,24 +490,9 @@
 		margin-bottom: 7%;
 	}
 
-
-
-
-	.footer-list-group{
-		flex-direction: column;
-	}
-	.footer-list + .footer-list .footer-list-item{
-		display: none;
-	}
-	/* .footer-list:last-child .footer-list-item form{
-		display: block;
-	} */
 }
 
 @media screen and (max-width: 414px){
-	.mw-1260{
-		max-width: 400px;
-	}
 	.banner-text{
 		padding-top: 40vh;
 	}
@@ -493,4 +505,35 @@
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
-}
+		.mw-1260{
+		  max-width: 400px;
+		}
+		/* logo縮小 */
+		.logo{
+		  width: 60px;
+		}
+		/* footer設定 */
+		.footer-list-group{
+		  justify-content: center;
+		  align-items: center;
+		}
+		.footer-list{
+		  width: 100%;
+		}
+		footer .footer-list-title-mt{
+		  margin-top: 0;
+		}
+		.footer-list{
+		  margin-bottom: 50px;
+		}
+		.footer-list:first-child .footer-list-item ul{
+		 justify-content: start;
+		}
+		.footer-list:first-child .footer-list-item li{
+		  padding : 0 10px;
+		}
+		footer input {
+		  max-width: 250px;
+		  width: 100%;
+		}
+	  }
