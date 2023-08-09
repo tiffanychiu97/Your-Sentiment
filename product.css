@@ -142,7 +142,7 @@ nav{
     position: absolute;
     inset: 0;
     margin: 12% auto;
-    animation: slidedown 1s ease-in-out, fadein 1s ease-in; 
+    animation: slidedown 1.5s ease-in-out, fadein 1.5s ease-in; 
 }
 @keyframes slidedown{
     from{transform: translateY(-100%);

@@ -9,21 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Serif:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/47124c67c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="faq.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container ma-0 mw-1260">
             <div class="logo"><a href="index.html"><img src="image/logo.svg" alt=""></a></div>
             <nav>
                 <ul class="menu">
                     <li><a href="what_is_your_sentiment.html">WHAT IS YOUR SENTIMENT</a></li>
                     <li><a href="sentiment_for_you.html">SENTIMENT FOR YOU</a></li>
-                    <li class="explore"><a href="">EXPLORE</a><ul><li><a href="product.html">DEVICES</a></li><li><a href="ourstory.html">OUR STORY</a></li></ul></li>
+                    <li class="explore"><a>EXPLORE</a><ul><li><a href="product.html">DEVICES</a></li><li><a href="ourstory.html">OUR STORY</a></li></ul></li>
                     <li><a href="contact_us.html">CONTACT US</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
+            <div class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <div class="bread-crumb-wrap">
@@ -35,22 +41,22 @@
     <h1 class="FAQ">FAQ</h1>
     <section class="question-group ma-0 mw-1260">
         <dl class="faqs">
-            <dt>How does Your Sentiment enhance home safety and security?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">How does Your Sentiment enhance home safety and security?<span class="plusminus">+</span> </dt>
             <dd>Your Sentiment integrates with smart door locks and surveillance systems, allowing you to remotely monitor and control access to your home.</dd>
 
-            <dt>Can Your Sentiment integrate with existing smart home devices?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">Can Your Sentiment integrate with existing smart home devices?<span class="plusminus">+</span> </dt>
             <dd>Yes, Your Sentiment is designed to seamlessly integrate with a wide range of smart home devices, including lights, thermostats, speakers, and more.</dd>
 
-            <dt>What are the energy-saving features offered by Your Sentiment?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">What are the energy-saving features offered by Your Sentiment?<span class="plusminus">+</span> </dt>
             <dd>Your Sentiment includes advanced energy management features that allow you to monitor and optimize energy usage in your home. Set schedules, adjust settings, and receive energy consumption insights to make informed decisions and reduce your carbon footprint.</dd>
 
-            <dt>How does Your Sentiment contribute to sustainability in everyday living?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">How does Your Sentiment contribute to sustainability in everyday living?<span class="plusminus">+</span> </dt>
             <dd>Your Sentiment promotes sustainable living by providing smart features that help conserve resources and reduce waste. Automated lighting control, intelligent thermostat settings, and optimized appliance usage contribute to a greener and more eco-friendly lifestyle.</dd>
 
-            <dt>Can Your Sentiment be controlled remotely using a smartphone or tablet?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">Can Your Sentiment be controlled remotely using a smartphone or tablet?<span class="plusminus">+</span> </dt>
             <dd>Absolutely! With the Your Sentiment mobile app, you have full control over your smart home devices from anywhere, at any time.</dd>
 
-            <dt>What customization options are available to personalize the aesthetic experience with Your Sentiment?<span class="plusminus">+</span> </dt>
+            <dt class="border-bottom">What customization options are available to personalize the aesthetic experience with Your Sentiment?<span class="plusminus">+</span> </dt>
             <dd>Your Sentiment offers a wide range of customization options to suit your personal style and preferences. From adjustable lighting schemes and color palettes to customizable themes and ambient sound choices, create an atmosphere that reflects your unique aesthetic vision.</dd>
           </dl>
     </section>
@@ -114,16 +120,28 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-   $(document).ready(function() {
-			
-		$('.faqs dd').hide();
-    	$('.faqs dt').click(function () {
-			
-			$(this).children('.plusminus').text($(this).children('.plusminus').text() == '+' ? '-' : '+');
-			$(this).next('.faqs dd').slideToggle(500);
-            
+  
+        $(function () {
+            $('.faqs dd').hide();
+            $('.faqs dt').click(function () {
+                let dt = $(this);
+                let plusminus = dt.children('.plusminus');
+                let dd = dt.next('.faqs dd');
+                
+                if (dd.is(':hidden')) {
+                    dd.slideToggle(500);
+                    plusminus.text(plusminus.text() == '+' ? '-' : '+');
+                    dt.toggleClass('border-bottom');
+                    
+                } else {
+                    setTimeout(function () {
+                        dt.toggleClass('border-bottom');
+                    }, 500); // 延遲 500 毫秒添加底線
+                    dd.slideToggle(500);
+                    plusminus.text(plusminus.text() == '+' ? '-' : '+');
+                }
+            });
         });
-    })
     </script>
 </body>
 </html>
