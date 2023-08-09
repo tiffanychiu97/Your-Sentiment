@@ -280,6 +280,9 @@ footer{
 	.container{
 		padding: 2% 5%;
 	}
+	header{
+		margin-bottom: 50px;
+	}
 	.bread-crumb-wrap{
 		display: none;
 	  }

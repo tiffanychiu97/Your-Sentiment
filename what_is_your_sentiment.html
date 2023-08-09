@@ -7,14 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Roboto+Serif:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="common.css"> 
     <link rel="stylesheet" href="what_is_your_sentiment.css">
     <script src="https://kit.fontawesome.com/47124c67c5.js" crossorigin="anonymous"></script>
+    <script src="mobile-header.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container ma-0 mw-1260">
             <div class="logo"><a href="index.html"><img src="image/logo.svg" alt=""></a></div>
             <nav>
@@ -26,6 +30,11 @@
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
+            <div class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <div class="bread-crumb-wrap">
@@ -41,8 +50,8 @@
     </div>
     <div class="banner ma-0">
         <div class="picture">
-            <img src="image/what_is_your_sentiment/man.jpg" alt="">
-            <img src="image/what_is_your_sentiment/girl.jpg" alt="">
+            <img src="image/what_is_your_sentiment/man.jpg" alt="用手機的人">
+            <img src="image/what_is_your_sentiment/girl.jpg" alt="用手機的人" class="hidden">
         </div>
         <div class="feature ma-0">
             <ul>
@@ -192,21 +201,34 @@
         <div class="container-inner ma-0 mw-1260">
             <p class="sentence small-sentence">Finally, make your life complete by:</p>
             <h2 class="title title-dark-blue">Steping into a realm of <span>aesthetics.</span></h2>
-            <div class="grid">
-                <div class="grid-column">
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid-test2.jpg" alt=""></a></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid2.png" alt=""></a></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid3.png" alt=""></a></div>
-                </div>
-                <div class="grid-column">
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid4.jpg" alt=""></a></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid5.png" alt=""></a></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><div class="grid6"></a></div></div>
-                </div>
-                <div class="grid-column">
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><div class="grid7"></a></div></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid8.jpg" alt=""></a></div>
-                    <div class="grid-item"><a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid9.jpg" alt=""></a></div>
+            <div class="grid-container">
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid-test2.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid2.png" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid3.png" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid4.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid5.png" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><div class="grid6"></div></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><div class="grid7"></div></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid8.jpg" alt=""></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="sentiment_for_you2.html"><img src="image/what_is_your_sentiment/grid9.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,8 +291,26 @@
         <div class="copyright">
             <p>© 2023 Your Sentiment. All Rights Reserved.</p>
         </div>
-      
-        </script>
     </footer>
+    
+    <script>
+       $(function () {
+    // 使用媒體查詢來檢查屏幕寬度
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    // 如果屏幕寬度小於 600px，初始化 Owl Carousel
+    if (screenWidth < 600) {
+        $('.columns3').addClass('owl-carousel owl-theme');
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            nav: false
+        });
+    } else {
+        // 如果屏幕寬度大於或等於 600px，移除 Owl Carousel 相關類別
+        $('.columns3').removeClass('owl-carousel owl-theme');
+    }
+});
+    </script>
 </body>
 </html>

@@ -78,25 +78,28 @@ dd{
   top: 0;
   line-height: 87px;
 }
-
-@media screen and (max-width: 768px){ 
-
+.faqs p{
+  width: 92%;
 }
 
 @media screen and (max-width: 414px){
   .question-group {
-    width: 100%;
-    margin-left: 0%;
+    width: 93%;
+    margin-right: auto;
+    margin-left: auto;
     }
-  
   .FAQ{
     font-size: 40px;
     text-align: center;
+    margin-left: 0px;
   }
   .FAQ::after {
-    left: 88px;
+    left: 145px;
   }
   .faqs{
     margin: 0 auto;
+  }
+  .faqs dt{
+    width: 100%;
   }
 }
