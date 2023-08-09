@@ -31,7 +31,7 @@
     content: 'FAQ';
     color:rgb(213,221,232);
     position: absolute;
-    left: 1.3%;
+    left: 15px;
     z-index:-1;
 }
 .question-group{
@@ -85,13 +85,16 @@ dd{
 
 @media screen and (max-width: 414px){
   .question-group {
-    width: 90%;
+    width: 100%;
     margin-left: 0%;
     }
   
   .FAQ{
     font-size: 40px;
     text-align: center;
+  }
+  .FAQ::after {
+    left: 88px;
   }
   .faqs{
     margin: 0 auto;
