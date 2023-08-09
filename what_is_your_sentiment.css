@@ -112,6 +112,7 @@
     font-size: 30px;
     margin-bottom: 70px;
     margin-left: 50px;
+    line-height: 1.2;
 }
 .title{
     font-family: var(--main-font-family);
@@ -137,13 +138,13 @@
     margin: 0 auto;
     align-items: center;
 }
-.function-feature-list{
+/* .function-feature-list{
     height: 461px;
-}
+} */
 .function-feature-list .icon{
     overflow: hidden;
 }
- .function-feature-list .icon img{
+.function-feature-list .icon img{
     width: 35px;
     height: 35px;
 }
@@ -262,9 +263,9 @@ section.bg-white{
     }
   } */
   
-  .grid-item {
+.grid-item {
     width: 100%;
-  }
+}
 
 .grid-item{
     box-sizing: border-box;
@@ -300,7 +301,29 @@ section.bg-white{
 .call-to-action i{
     font-style: italic;
 }
-
+@media screen and (max-width: 1055.33px) {
+    .function{
+        justify-content: center;
+    }
+    .function-feature-pic{
+        width: 50%;
+        /* margin-top: 50px;
+        margin-bottom: 20px; */
+     }
+     .function-feature-list{
+        width: 50%;
+        /* margin-top: 50px;
+        margin-bottom: 150px; */
+    }
+    .function-feature-list li {
+        padding: 26px 28px 26px 20px;
+    }
+    .container-inner {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+}
 @media screen and (max-width: 768px){
     /* .bread-crumb-wrap a{
       font-size: 14px;
@@ -335,7 +358,7 @@ section.bg-white{
   }
   
     @media screen and (max-width: 414px){
-    .slogan h1{
+    .slogan{
         width: 97%;
         margin-left: auto;
         margin-right: auto;
@@ -349,17 +372,7 @@ section.bg-white{
     h2{
       font-size: 22px;
     }
-    .function-feature-list{
-        order:2;
-        /* margin-top: 50px;
-        margin-bottom: 150px; */
-    }
-	.function-feature-pic{
-       order:1;
-       /* margin-top: 50px;
-       margin-bottom: 20px; */
-    }
-  
+    
     .feature{
         max-width: 320px;
     }
@@ -387,6 +400,19 @@ section.bg-white{
     /* .column{
         width: 95%;
     } */
+    .function-feature-pic{
+        width: 100%;
+        /* margin-top: 50px;
+        margin-bottom: 20px; */
+     }
+     .function-feature-list{
+        width: 100%;
+        /* margin-top: 50px;
+        margin-bottom: 150px; */
+    }
+    .function-feature-list li {
+        padding: 26px 28px 26px 10px;
+    }
     .call-to-action{
        max-width: 95%;
        margin-left: auto;
