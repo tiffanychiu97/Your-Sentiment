@@ -277,7 +277,12 @@ footer{
 	}
 	.explore .sub-menu{
 		background-color: #fff;
-		backdrop-filter: blur(0px);
+	}
+	.explore ul{
+		width: 100%;
+		background-color: rgb(255, 255, 255);
+		backdrop-filter: none;
+		border-radius: none;
 	}
 }
 
