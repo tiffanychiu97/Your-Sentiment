@@ -275,6 +275,9 @@ footer{
 	.menu .explore > a{
 		width: calc(100% - 10px);
 	}
+	.sub-menu{
+		background-color: #fff;
+	}
 }
 
   
