@@ -25,12 +25,13 @@
     color: #3E4459;
     margin-left: 110px;
     font-weight: 400;
+    position: relative;
 }
 .FAQ::after{
     content: 'FAQ';
     color:rgb(213,221,232);
-    position: relative;
-    right: 20.5%;
+    position: absolute;
+    left: 1.3%;
     z-index:-1;
 }
 .question-group{
@@ -79,9 +80,7 @@ dd{
 }
 
 @media screen and (max-width: 768px){ 
-  .FAQ::after{
-    right: 21%;
-   }
+
 }
 
 @media screen and (max-width: 414px){
