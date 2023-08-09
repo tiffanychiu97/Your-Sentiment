@@ -381,6 +381,9 @@ section.bg-white{
         width: 100%;
         padding-top: 50px;
     }
+    .sentence{
+        font-size: 25px;
+    }
     /* .column{
         width: 95%;
     } */
