@@ -326,6 +326,9 @@ body::-webkit-scrollbar {
 
 /* RWD */
 @media screen and (max-width: 768px){ 
+	header{
+		margin-bottom: 0px;
+	}
 	.banner, .intro, .devices, .intro-personalization, .sleep-intro{
 		flex-wrap: wrap;
 	}

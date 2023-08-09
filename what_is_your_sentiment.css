@@ -351,13 +351,13 @@ section.bg-white{
     }
     .function-feature-list{
         order:2;
-        margin-top: 50px;
-        margin-bottom: 150px;
+        /* margin-top: 50px;
+        margin-bottom: 150px; */
     }
 	.function-feature-pic{
        order:1;
-       margin-top: 50px;
-       margin-bottom: 20px;
+       /* margin-top: 50px;
+       margin-bottom: 20px; */
     }
   
     .feature{
