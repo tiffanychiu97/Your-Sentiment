@@ -9,7 +9,7 @@ let menu = document.querySelector(".menu");
         // $('.sub-menu').hide();
         $('.nav-arrow').click(function () {
             let submenu = $(this).next('.sub-menu');
-            submenu.slidetoggle();
+            submenu.slideToggle();
             $(this).html($(this).html() == `<span class="material-symbols-outlined">
             chevron_right
             </span>` ? `<span class="material-symbols-outlined">
