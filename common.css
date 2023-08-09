@@ -87,6 +87,9 @@ header{
 .explore:hover ul{
 	display: block;
 }
+.nav-arrow{
+	display: none;
+}
 .hb{
 	display: none;
 }
@@ -192,6 +195,7 @@ footer{
 		width: 30px;
 		height: 30px;
 		position: relative;
+		cursor: pointer;
 	}
 	.hb span{
 		display: block;
@@ -256,7 +260,21 @@ footer{
 	.menu a + a{
 	  border-top: #3E4459 1px;
 	}
-
+	.nav-arrow{
+		width: 10px;
+		flex-shrink: 0;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		cursor: pointer;
+	}
+	.menu .explore{
+		display: flex;
+	}
+	.menu .explore > a{
+		width: calc(100% - 10px);
+	}
 }
 
   
@@ -283,9 +301,11 @@ footer{
 	header{
 		margin-bottom: 50px;
 	}
+	
 	.bread-crumb-wrap{
 		display: none;
-	  }
+	}
+	  
 }
 
 
