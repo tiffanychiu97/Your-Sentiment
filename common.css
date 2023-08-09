@@ -87,7 +87,7 @@ header{
 .explore:hover ul{
 	display: block;
 }
-.nav-arrow{
+.explore .nav-arrow{
 	display: none;
 }
 .hb{
@@ -275,8 +275,9 @@ footer{
 	.menu .explore > a{
 		width: calc(100% - 30px);
 	}
-	.sub-menu{
+	.explore .sub-menu{
 		background-color: #fff;
+		backdrop-filter: blur(0px);
 	}
 }
 
