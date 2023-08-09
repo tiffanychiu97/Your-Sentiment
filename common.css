@@ -87,7 +87,7 @@ header{
 .explore:hover ul{
 	display: block;
 }
-.explore .nav-arrow{
+.nav-arrow{
 	display: none;
 }
 .hb{
@@ -272,11 +272,8 @@ footer{
 	.menu .explore{
 		display: flex;
 	}
-	.menu .explore > a{
+	.explore > a{
 		width: calc(100% - 30px);
-	}
-	.explore .sub-menu{
-		background-color: #fff;
 	}
 	.explore ul{
 		width: 100%;
