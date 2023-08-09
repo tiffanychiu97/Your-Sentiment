@@ -87,6 +87,10 @@ header{
 .explore:hover ul{
 	display: block;
 }
+.menu .explore:hover > a{
+	transform: translateY(0px);
+}
+
 .nav-arrow{
 	display: none;
 }
@@ -184,11 +188,11 @@ footer{
 	.menu{
 		display: none;
 		position: absolute;
-		width: 100%;
+		width: 40%;
 		background-color: #fff;
 		top: 100%;
-		left: 0;
-		animation: hbfadeout .6s ease-in-out;
+		right: 0;
+		/* animation: hbfadeout .6s ease-in-out; */
 	}
 	.hb{
 		display: block;
@@ -244,27 +248,31 @@ footer{
 	}
 	
 	@keyframes hbfadein {
-		from{transform: translateX(-100%); opacity: 0;}
+		from{transform: translateX(200%); opacity: 0;}
 		to {transform: translateX(0%); opacity: 1;}
 		}
 	@keyframes hbfadeout {
 		from{transform: translateX(0%); opacity: 1;}
-		to {transform: translateX(-100%); opacity: 0;}
+		to {transform: translateX(200%); opacity: 0;}
 		}
+	.menu li:hover > a{
+		transform: translateY(0px);
+		border-bottom: 0px;
+	}
+	.menu a{
+		transition: none;
+	}
 	.menu a{
 		display: block;
 		text-align: center;
 		padding: 15px;
 		font-size: 14px;
 	}
-	.menu a + a{
-	  border-top: #3E4459 1px;
-	}
 	.nav-arrow{
+		display: flex;
 		width: 30px;
 		flex-shrink: 0;
 		text-align: center;
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
@@ -275,12 +283,20 @@ footer{
 	.explore > a{
 		width: calc(100% - 30px);
 	}
+	.explore:hover ul{
+		display: none;
+	}
 	.explore ul{
 		width: 100%;
 		background-color: rgb(255, 255, 255);
 		backdrop-filter: none;
 		border-radius: none;
 	}
+	.menu > li{
+		padding: 1rem 1.5rem;
+		border-bottom: 1px solid #ccc;
+	}
+	
 }
 
   
@@ -320,6 +336,10 @@ footer{
     .mw-1260{
       max-width: 400px;
     }
+	.menu{
+		width: 100%;
+	
+	}
 	/* logo縮小 */
     .logo{
       width: 60px;

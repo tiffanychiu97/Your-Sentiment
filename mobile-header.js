@@ -6,16 +6,15 @@ let menu = document.querySelector(".menu");
     });
 
     $(function () {
-        // $('.sub-menu').hide();
         $('.nav-arrow').click(function () {
             let submenu = $(this).next('.sub-menu');
-            submenu.slideToggle();
+            submenu.slideToggle(200);
             $(this).html($(this).html() == `<span class="material-symbols-outlined">
             chevron_right
             </span>` ? `<span class="material-symbols-outlined">
             expand_more
             </span>` : `<span class="material-symbols-outlined">
-            chevron_right
+            expand_more
             </span>`);
             }
         );
