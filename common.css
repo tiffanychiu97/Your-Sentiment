@@ -261,7 +261,7 @@ footer{
 	  border-top: #3E4459 1px;
 	}
 	.nav-arrow{
-		width: 10px;
+		width: 30px;
 		flex-shrink: 0;
 		text-align: center;
 		display: flex;
@@ -273,7 +273,7 @@ footer{
 		display: flex;
 	}
 	.menu .explore > a{
-		width: calc(100% - 10px);
+		width: calc(100% - 30px);
 	}
 	.sub-menu{
 		background-color: #fff;
