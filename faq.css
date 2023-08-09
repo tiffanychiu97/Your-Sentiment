@@ -30,14 +30,13 @@
     content: 'FAQ';
     color:rgb(213,221,232);
     position: relative;
-    right: 235px;
+    right: 20.5%;
     z-index:-1;
 }
 .question-group{
     margin-top: 2.916667%;
     margin-left: 31%;
 }
-
 
 dt{
   font-size: 18px;
@@ -46,6 +45,7 @@ dt{
   line-height: 1.5;
   padding: 30px 0;
   position: relative;
+  cursor: pointer;
 }
 dt::before{
   content: '';
@@ -78,11 +78,18 @@ dd{
   line-height: 87px;
 }
 
-@media screen and (max-width: 768px){
-.question-group {
-  width: 90%;
-  margin-left: 0%;
-  }
+@media screen and (max-width: 768px){ 
+  .FAQ::after{
+    right: 21%;
+   }
+}
+
+@media screen and (max-width: 414px){
+  .question-group {
+    width: 90%;
+    margin-left: 0%;
+    }
+  
   .FAQ{
     font-size: 40px;
     text-align: center;
