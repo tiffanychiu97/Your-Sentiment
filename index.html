@@ -68,13 +68,13 @@
     data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         <h2>Your Sentiment creates <span data-aos="fade-down" data-aos-duration="900"
             data-aos-easing="ease-in"
-            data-aos-delay="400"
+            data-aos-delay="350"
             data-aos-offset="100">harmony,</span> <span data-aos="fade-down" data-aos-duration="900"
             data-aos-easing="ease-in"
-            data-aos-delay="800"
+            data-aos-delay="700"
             data-aos-offset="100">balance,</span>  and <span data-aos="fade-down" data-aos-duration="900"
             data-aos-easing="ease-in"
-            data-aos-delay="1200"
+            data-aos-delay="1050"
             data-aos-offset="100">convenience.</span></h2>
         <p>With its unique focus on sentiment and aesthetics, Your Sentiment brings together a curated selection of smart devices and services to craft a personalized smart home. From stylish lighting to innovative security solutions, Your Sentiment combines advanced technology and your favorite brands, empowering you to create a truly harmonious and captivating living environment.</p>
     </section>
@@ -188,35 +188,11 @@
             <p>© 2023 Your Sentiment. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="mobile-header.js"></script>
+    <script src="js/mobile-header.js"></script>
+    <script src="js/index.js"></script>
 
     <script>
         AOS.init();
-    </script>
-    <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    ScrollTrigger.matchMedia({
-    "(min-width: 768px)": () => {
-    let pinWrap = document.querySelector(".pin-wrap");
-    let pinWrapWidth = pinWrap.offsetWidth;
-    let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-    gsap.to(".pin-wrap", {
-      x: -1650,
-      scrollTrigger: {
-        trigger: ".carousel-item", //觸發的物件
-        ease: "power1.inOut",
-        start: "top 200", // (物件開始位置, 卷軸開始位置) top center bottom px
-        end: "bottom 262", //(物件結束位置, 卷軸結束位置) , 也可以設卷軸捲動多少結束動畫(+=300)
-        pin: true, // 物件執行完動畫會跟著卷軸走，類似 fixed-top
-        scrub: true, // 物件動畫根據卷軸捲動程度跑
-        // toggleClass: "active", //  class名稱 須為字串
-        markers: false // 顯示標記
-      }
-    });
-  }
-});
-
     </script>
 </body>
 </html>

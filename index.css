@@ -376,6 +376,9 @@ body::-webkit-scrollbar {
 		width: 90%;
 		margin: 0 auto;
 	}
+	.devices-card-layout{
+		margin-left: 15%;
+	}
 	.devices-text{
 		padding-right: 0;
 	}

@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/47124c67c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="faq.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main-header">
@@ -129,31 +130,7 @@
             <p>© 2023 Your Sentiment. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="mobile-header.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-  
-        $(function () {
-            $('.faqs dd').hide();
-            $('.faqs dt').click(function () {
-                let dt = $(this);
-                let plusminus = dt.children('.plusminus');
-                let dd = dt.next('.faqs dd');
-                
-                if (dd.is(':hidden')) {
-                    dd.slideToggle(500);
-                    plusminus.text(plusminus.text() == '+' ? '-' : '+');
-                    dt.toggleClass('border-bottom');
-                    
-                } else {
-                    setTimeout(function () {
-                        dt.toggleClass('border-bottom');
-                    }, 500);
-                    dd.slideToggle(500);
-                    plusminus.text(plusminus.text() == '+' ? '-' : '+');
-                }
-            });
-        });
-    </script>
+    <script src="js/mobile-header.js"></script>
+    <script src="js/faq.js"></script>
 </body>
 </html>

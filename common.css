@@ -60,6 +60,7 @@ header{
 	font-size: 0.875rem;
 	transition:  transform .6s, border-bottom .8s;
 	border-bottom: 2px solid rgba(163, 186, 217, 0);
+	text-align: center;
 }
 .menu li{
 	padding: 2rem 1.5rem;
@@ -277,7 +278,7 @@ footer{
 	}
 	.nav-arrow{
 		display: flex;
-		width: 30px;
+		width: 50px;
 		flex-shrink: 0;
 		text-align: center;
 		justify-content: center;
@@ -288,7 +289,7 @@ footer{
 		display: flex;
 	}
 	.explore > a{
-		width: calc(100% - 30px);
+		width: calc(100% - 50px);
 	}
 	.explore:hover ul{
 		display: none;
@@ -315,6 +316,9 @@ footer{
     footer .footer-list-title-mt{
       margin-top: 50px;
     }
+	.menu li a{
+		text-align: left;
+	}
   }
 
   @media screen and (max-width: 768px){ 
@@ -347,9 +351,7 @@ footer{
 		width: 100%;
 	
 	}
-	.menu li a{
-		text-align: left;
-	}
+	
 	/* logo縮小 */
     .logo{
       width: 60px;
