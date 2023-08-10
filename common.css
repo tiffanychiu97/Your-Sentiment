@@ -90,6 +90,13 @@ header{
 .menu .explore:hover > a{
 	transform: translateY(0px);
 }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 
 .nav-arrow{
 	display: none;
@@ -339,6 +346,9 @@ footer{
 	.menu{
 		width: 100%;
 	
+	}
+	.menu li a{
+		text-align: left;
 	}
 	/* logo縮小 */
     .logo{
