@@ -336,10 +336,10 @@ footer{
 		width: 100%;
 	}
 	.menu a{
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.menu li{
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 	.bread-crumb-wrap{
 		display: none;
