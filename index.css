@@ -266,7 +266,7 @@
 	background-image: url(image/index/bgc-noise-warm.jpg);
 }
 .carousel-item{
-	width: 425px;
+	max-width: 425px;
 	margin: 5% 2%;
 	flex-shrink: 0;
 	top: 0 !important;
