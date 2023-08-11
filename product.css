@@ -148,13 +148,14 @@
 		margin-bottom: 0px;
 	}
     .banner-container h2{
-        font-size: 3rem;
+        font-size: 3.2rem;
+        margin-top: 25vh;
     }
     .category {
         margin: 75px auto 50px;
     }
     .category p {
-        width: 85%;
+        width: 78%;
     }
     .partner-list li{
         width: 95px;
