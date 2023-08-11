@@ -395,15 +395,19 @@ section.bg-white{
     .definition{
         width: 97%;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
     .definition h2{
         font-size: 2rem;
+    }
+    .container-inner{
+        padding-bottom: 10px;
     }
     .sentence{
         font-size: 25px;
     }
     .function-feature-list li {
-        padding: 26px 28px 26px 10px;
+        padding: 26px 10px 26px 10px;
     }
     .call-to-action{
        max-width: 98%;
