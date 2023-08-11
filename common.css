@@ -323,11 +323,11 @@ footer{
 	.mw-1260{
 		max-width: 720px;
 	}
+	.container {
+		padding: 0% 5%;
+	}
 	.logo{
 		width: 70px;
-	}
-	.container{
-		padding: 2% 5%;
 	}
 	header{
 		margin-bottom: 50px;

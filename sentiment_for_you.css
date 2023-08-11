@@ -330,9 +330,14 @@ h3{
 
   @media screen and (max-width: 414px){
     .article{
-        margin: -110px auto 50px;
+        margin: -110px auto 10px;
     }
     .article p{
-        width: 90%;
+        width: 100%;
+    }
+    .rainy-focus-collage, .morning-yoga-collage{
+        grid-gap: 2px;
+        max-width: 498px;
+        max-height: 338px;
     }
   }
