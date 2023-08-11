@@ -332,7 +332,9 @@ footer{
 	header{
 		margin-bottom: 50px;
 	}
-	
+	.menu{
+		width: 100%;
+	}
 	.bread-crumb-wrap{
 		display: none;
 	}
@@ -345,10 +347,6 @@ footer{
     .mw-1260{
       max-width: 400px;
     }
-	.menu{
-		width: 100%;
-	
-	}
 	
 	/* logo縮小 */
     .logo{
