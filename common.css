@@ -353,7 +353,9 @@ footer{
     .mw-1260{
       max-width: 400px;
     }
-	
+	.menu a{
+		font-size: 12px;
+	}
 	/* logo縮小 */
     .logo{
       width: 60px;
