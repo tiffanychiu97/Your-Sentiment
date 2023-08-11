@@ -256,12 +256,12 @@
 	display: block;
 }
 /* carousel */
+#sectionPin{
+	height: 100vh;
+}
 .carousel{
 	display: flex;
 	max-width: 100%;
-	/* overflow: hidden; */
-	/* overflow-x: scroll;
-	cursor: grab; */
 	margin-bottom: 100px;
 	background-image: url(image/index/bgc-noise-warm.jpg);
 }
@@ -271,7 +271,6 @@
 	flex-shrink: 0;
 	top: 0 !important;
 	position: initial !important;
-	/* overflow: hidden; */
 }
 .carousel-item img{
 	max-width: 100%;
