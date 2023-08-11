@@ -12,13 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Roboto+Serif:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/47124c67c5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="sentiment_for_you.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header class="main-header">
@@ -134,10 +133,10 @@
             <div class="slide-pic item"><img src="image/sentiment/mode05.jpg" alt=""></div>
 
         </div>
-       <div class="arrow">
+       <!-- <div class="arrow">
             <img src="image/sentiment/arrow.png" alt="">
             <img src="image/sentiment/arrow.png" alt="">
-       </div>
+       </div> -->
     </div>
     <div class="txt-pic ma-0 mw-1260">
         <div class="txt"><p>In the world of Your Sentiment, our community comes alive with endless possibilities and exciting variations. Share your personalized presets with others and inspire them to unlock new levels of sentiment in their smart home experience. Discover unique combinations of lighting, sound, and ambiance that others have created, and let their creativity spark your imagination. 
@@ -204,31 +203,7 @@
             <p>© 2023 Your Sentiment. All Rights Reserved.</p>
         </div>
     </footer>
-    
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="sentiment_for_you.js"></script> -->
-          <!-- owl.carousel -->
-          
-          <script>
-              $('.owl-carousel').owlCarousel({
-              stagePadding: 50,
-              loop:true,
-              margin:50,
-              nav:true,
-              responsive:{
-                  0:{
-                      items:1
-                  },
-                  600:{
-                      items:3
-                  },
-                  1000:{
-                      items:5
-                  }
-                  }
-              })
-            </script>
+    <script type="text/javascript" src="js/mobile-header.js"></script>
+    <script type="text/javascript" src="js/sentiment_for_you.js"></script>
 </body>
 </html>

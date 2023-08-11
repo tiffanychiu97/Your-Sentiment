@@ -60,7 +60,6 @@ header{
 	font-size: 0.875rem;
 	transition:  transform .6s, border-bottom .8s;
 	border-bottom: 2px solid rgba(163, 186, 217, 0);
-	text-align: center;
 }
 .menu li{
 	padding: 2rem 1.5rem;
@@ -196,7 +195,7 @@ footer{
 	.menu{
 		display: none;
 		position: absolute;
-		width: 40%;
+		width: 30%;
 		background-color: #fff;
 		top: 100%;
 		right: 0;
@@ -272,7 +271,6 @@ footer{
 	}
 	.menu a{
 		display: block;
-		text-align: center;
 		padding: 15px;
 		font-size: 14px;
 	}

@@ -80,9 +80,9 @@
     margin: 0 auto;
 }
 .product-card-list{
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     justify-content: center;
 }
 .product-card a{
@@ -91,6 +91,7 @@
 .product-card{
     width: 250px;
     padding: 0 2%;
+    margin: 0 auto 20px
 }
 .product-pic{
     margin-bottom: 35px;
@@ -128,7 +129,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 950px;
+    max-width: 950px;
     justify-content: center;
     align-items: center;
 }
@@ -141,4 +142,20 @@
 }
 .partner-list li img{
     max-width: 50%;
+}
+
+@media screen and (max-width: 768px){ 
+	header{
+		margin-bottom: 0px;
+	}
+    .category {
+        margin: 75px auto 50px;
+    }
+    .category p {
+        width: 80%;
+    }
+    .partner-list li{
+        width: 95px;
+        height: 50px;
+    }
 }

@@ -1,27 +1,17 @@
-// $(document).ready(function(){
-//     $('.slider').slick({
-//         centerMode: true,
-//         centerPadding: '60px',
-//         slidesToShow: 5,
-//         responsive: [
-//           {
-//             breakpoint: 768,
-//             settings: {
-//               arrows: true,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 3
-//             }
-//           },
-//           {
-//             breakpoint: 480,
-//             settings: {
-//               arrows: true,
-//               centerMode: true,
-//               centerPadding: '40px',
-//               slidesToShow: 1
-//             }
-//           }
-//         ]
-//       });
-//   });
+$('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop:true,
+    margin:50,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+      //   1000:{
+      //       items:5
+      //   }
+        }
+    })
