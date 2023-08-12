@@ -1,29 +1,25 @@
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
+$(document).ready(function() {
+    
+    $('.owl-carousel').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
+            margin:10,
             nav: false,
             loop: true,
             touchDrag: true,
         },
 
-        769:{
+        1000:{
             items: 3,
+            margin: 5,
             nav:false,
             loop: false,
             touchDrag: true,
             mouseDrag: false
         },
+        }
+    })
 
-        // 1000:{
-        //     items: 4,
-        //     nav: true,
-        //     loop:false,
-        //     touchDrag: false,
-        //     mouseDrag: true
-        // }
-    }
 })
