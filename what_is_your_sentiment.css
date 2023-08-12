@@ -399,6 +399,9 @@ section.bg-white{
     .function-feature-list .txt{
         line-height: 1.29;
     }
+    .txt.ml{
+        margin-left: 5px;
+    }
     section.bg-white {
         padding-bottom: 0px;
     }
