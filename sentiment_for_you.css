@@ -350,6 +350,10 @@ h3{
   @media screen and (max-width: 414px){
     .article{
         margin: -110px auto 10px;
+        padding: 150px 5% 80px;
+    }
+    .article h3{
+        font-size: 2rem;
     }
     .article p{
         width: 100%;
@@ -372,12 +376,17 @@ h3{
     .collage1-item1{
         display: none;
     }
-
+    .mode-name-2 p{
+        margin-bottom: 50px;
+    }
     .collage2-item2{
         display: none;
     }
     .collage2-item5{
         display: none;
+    }
+    .mode-name p{
+        margin-bottom: 50px;
     }
     /* .collage1-item2{
         grid-area: 1 / 1 / 2 / 2; 
