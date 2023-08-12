@@ -177,4 +177,7 @@
     .product-card-list{
         padding: 0;
     }
+    #owl-carousel2{
+        flex-direction: column;
+    }
 }
