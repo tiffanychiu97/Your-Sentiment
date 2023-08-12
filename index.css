@@ -386,6 +386,9 @@ body::-webkit-scrollbar {
 	.carousel .carousel-item:last-child{
 		display: none;
 	}
+	#sectionPin{
+		margin-bottom: 50px;
+	}
 	.sleep-intro-pic {
 		margin-top: 100px;
 	}
