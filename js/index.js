@@ -18,3 +18,7 @@ gsap.to(".pin-wrap", {
   }
 });
 
+
+        let images = document.querySelectorAll('img.lazyload');
+        lazyload(images);
+  
