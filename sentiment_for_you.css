@@ -118,10 +118,10 @@ h3{
 	background-color: #3E4459;
 	color: #ffffff;
 	border-radius: 20px;
-	width: 160px;
-	padding: 15px 25px;
+	width: 10rem;
+	padding: 0.9375rem 1.5625rem;
 	border: none;
-	font-size: 16px;
+	font-size: 1rem;
 	font-family: 'Inter', sans-serif;
     margin-left: 170px;
 }
@@ -363,27 +363,39 @@ h3{
         max-width: 498px;
         max-height: 338px;
     } */
-    /* .rainy-focus-collage{
+    /* .rainy-focus-collage{.rainy-focus-collage
         grid-template-columns: 346px 332px;
         grid-template-rows: 1fr;
         grid-gap: 2px;
         margin: 0 auto 130px;
     } */
     .rainy-focus-collage{
-        grid-template-columns: 0fr 1fr 1fr;   /*292px 346px 332px;*/
-        grid-template-rows: 0fr 1fr;
+        max-width: 360px;
+        grid-gap: 2px;
+        grid-template-columns: 0fr 172px 180px;   /*292px 346px 332px;*/
+        grid-template-rows: 1fr 1fr;
     }
     .collage1-item1{
         display: none;
     }
-    .mode-name a .learn-more-btn{
-        margin-left: 150px;
+    .mode-name p{
+        font-size: 17px;
+        padding-left: 15px;
+        margin-bottom: 15px;
     }
-    .mode-name-2 p{
-        margin-bottom: 30px;
+    .mode-name p:first-child{
+        font-size: 10px;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
+    .mode-name a .learn-more-btn{
+        width: 100px;
+        margin-left: 10px;
+        font-size: 10px;
+        padding: 10px;
     }
     .mode-name-2 a .learn-more-btn{
-        margin-left: 115px;
+        margin-left: 100px;
     }
     .collage2-item2{
         display: none;
@@ -391,9 +403,7 @@ h3{
     .collage2-item5{
         display: none;
     }
-    .mode-name p{
-        margin-bottom: 30px;
-    }
+    
     .rainy-focus-collage, .morning-yoga-collage {
         margin-bottom: 70px;
     }

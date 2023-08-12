@@ -1,4 +1,3 @@
-
 /* banner */
 .banner{
 	display: flex;
@@ -407,8 +406,7 @@ body::-webkit-scrollbar {
 	}
 	.carousel-item {
 		width: 100%;
-		margin: 0%;
-		padding: 0 1%;
+		margin: 0 1%;	
 	}
 	.carousel-item img {
 		height: 100vh;
