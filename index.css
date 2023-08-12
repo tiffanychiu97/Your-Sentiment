@@ -411,4 +411,7 @@ body::-webkit-scrollbar {
 	.carousel-item img {
 		height: 100vh;
 	}
+	.sleep-intro-pic {
+		margin-top: 50px;
+	}
 }
