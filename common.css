@@ -14,6 +14,7 @@ img{
 *,*::before,*::after{
 	box-sizing: border-box;
 }
+/* loading */
 .loading-wrapper{
 	background-color: #fff;
 	position: fixed;
@@ -25,7 +26,7 @@ img{
 }
 .loading{
 	position: absolute;
-	width:400px;
+	width: 400px;
 	height: 100px;
 	inset:0;
 	margin: auto;
@@ -217,7 +218,7 @@ footer{
 	.menu{
 		display: none;
 		position: absolute;
-		width: 30%;
+		width: 35%;
 		background-color: #fff;
 		top: 100%;
 		right: 0;

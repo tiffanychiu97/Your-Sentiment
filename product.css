@@ -9,12 +9,6 @@
     position: relative;
     z-index: 0;
 }
-
-/* .bread-crumb-wrap ol{
-    display: flex;
-    margin-left: 110px;
-    margin-bottom: 75px;
-} */
 .bread-crumb-wrap a{
     color: var(--black);
     font-size: 16px;
@@ -147,6 +141,12 @@
     max-width: 50%;
 }
 
+
+@media screen and (max-width: 1000px){
+    #owl-carousel2{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 768px){ 
 	header{
 		margin-bottom: 0px;
@@ -177,7 +177,5 @@
     .product-card-list{
         padding: 0;
     }
-    #owl-carousel2{
-        flex-direction: column;
-    }
+   
 }
