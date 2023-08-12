@@ -62,10 +62,11 @@ header{
 	border-bottom: 2px solid rgba(163, 186, 217, 0);
 }
 .menu li{
-	padding: 2rem 1.5rem;
+	padding: 12px 1.5rem 2rem;
 }
 .menu li a{
 	display: block;
+	padding-top: 20px;
 }
 .menu li:hover > a{
 	transform: translateY(-5px);
