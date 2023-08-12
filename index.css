@@ -383,6 +383,9 @@ body::-webkit-scrollbar {
 	.carousel-item img {
 		height: 100vh;
 	}
+	.carousel .carousel-item:last-child{
+		display: none;
+	}
 	.sleep-intro-pic {
 		margin-top: 50px;
 	}
@@ -394,7 +397,6 @@ body::-webkit-scrollbar {
 		margin-top: 5%;
 		margin-bottom: 7%;
 	}
-
 }
 
 @media screen and (max-width: 414px){
@@ -410,17 +412,5 @@ body::-webkit-scrollbar {
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
-	.carousel .carousel-item:last-child{
-		display: none;
-	}
-	.carousel-item {
-		width: 100%;
-		margin: 0 1%;	
-	}
-	.carousel-item img {
-		height: 100vh;
-	}
-	.sleep-intro-pic {
-		margin-top: 50px;
-	}
+	
 }
