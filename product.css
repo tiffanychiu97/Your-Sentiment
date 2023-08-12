@@ -174,4 +174,7 @@
     .category h3 {
         margin-bottom: 20px;
     }
+    .product-card-list{
+        padding: 0;
+    }
 }
