@@ -376,7 +376,16 @@ body::-webkit-scrollbar {
 	.intro-personalization-pic{
 		display: none;
 	}
-	
+	.carousel-item {
+		width: 100%;
+		margin: 0 1%;	
+	}
+	.carousel-item img {
+		height: 100vh;
+	}
+	.sleep-intro-pic {
+		margin-top: 50px;
+	}
 	.sleep-intro-pic, .sleep-intro-txt{
 		width: 90%;
 		margin: 0 auto;
