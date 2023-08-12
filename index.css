@@ -402,4 +402,15 @@ body::-webkit-scrollbar {
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
+	.carousel .carousel-item:last-child{
+		display: none;
+	}
+	.carousel-item {
+		width: 100%;
+		margin: 0%;
+		padding: 0%;
+	}
+	.carousel-item img {
+		height: 90vh;
+	}
 }
