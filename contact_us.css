@@ -132,38 +132,11 @@ input[type="submit"] {
   
     /* RWD */
   @media screen and (max-width: 768px){
-    /* .bread-crumb-wrap a{
-      font-size: 14px;
-    }
-    .bread-crumb-wrap li + li::before{
-      content: '/';
-      display: inline-block;
-      width: 10px;
-    }
-    .bread-crumb-wrap li + li{
-      padding-left: 5px;
-    } */
-    .bread-crumb-wrap{
-      display: none;
-    }
     header{
       margin-bottom: 0px;
     }
-    /* header a{
-      font-size: 12px;
-    } */
-    
     h1{
       font-size: 38px;
-    }
-    mw-1260{
-      max-width: 720px;
-    }
-    .logo{
-      width: 70px;
-    }
-    .container{
-      padding: 2% 5%;
     }
     .main-container{
       max-width: 405px;
@@ -172,7 +145,6 @@ input[type="submit"] {
     .mt{
       margin-top: 20px;
     }
-    
   }
   
 

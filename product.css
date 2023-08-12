@@ -163,3 +163,11 @@
     }
   
 }
+@media screen and (max-width: 414px){
+    .banner-container h2 {
+        width: 80%;
+    }
+    .category h3 {
+        margin-bottom: 20px;
+    }
+}

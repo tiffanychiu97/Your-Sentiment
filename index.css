@@ -329,15 +329,6 @@ body::-webkit-scrollbar {
 	.banner, .intro, .devices, .intro-personalization, .sleep-intro{
 		flex-wrap: wrap;
 	}
-	.mw-1260{
-		max-width: 720px;
-	}
-	.logo{
-		width: 60px;
-	}
-	.container{
-		padding: 2% 5%;
-	}
 	.banner > :first-child{
 		margin-right: 0;
 	}
