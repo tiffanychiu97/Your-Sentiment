@@ -104,7 +104,7 @@ h3{
     font-family: var(--main-font-family);
     font-size: 25px;
     font-weight: 500;
-    padding-left: 31px;
+    padding-left: 30px;
     margin-bottom: 50px;
 }
 .mode-name p:first-child{
@@ -197,13 +197,13 @@ h3{
     height: auto;
 }
 .mode-name-2 p{
-    margin-bottom: 70px;
+    margin-bottom: 22.7%;
 }
 .mode-name-2 p:first-child{
-    margin-top: 120px;
+    margin-top: 39%;
 }                     
-.mode-name-2 a .learn-more-btn{
-    margin-left: 135px;
+.mode-name-2 a .learn-more-btn {
+    margin-left: 40%;
 }
 
 /* 圖片幻燈片 */
@@ -322,7 +322,12 @@ h3{
     }
     
   } */
-
+  @media screen and (max-width: 1000px){
+    .mode-name{
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+  }
   @media screen and (max-width: 768px){
     .banner-pic{
         width: 40%;
@@ -386,7 +391,7 @@ h3{
     }
     .mode-name a .learn-more-btn{
         width: 100px;
-        margin-left: 10px;
+        margin-left: 5px;
         font-size: 10px;
         padding: 10px;
     }
@@ -395,7 +400,7 @@ h3{
     }  
 
     .mode-name-2 a .learn-more-btn{
-        margin-left: 100px;
+        margin-left: 80px;
     }
     .morning-yoga-collage{
         grid-template-columns: 2fr 1fr 0fr;
