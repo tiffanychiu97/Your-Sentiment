@@ -13,14 +13,15 @@ $(document).ready(function () {
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
-"(min-width: 200px)": () => {
+
+"(min-width: 300px)": () => {
   let pinWrap = $(`.pin-wrap`)
   let pinWrapWidth = pinWrap.width()
-gsap.to(".pin-wrap", {
+  gsap.to(".pin-wrap", {
   x: -pinWrapWidth,
-  scrollTrigger: {
-    trigger: "#sectionPin", 
-    start: "top 100",
+    scrollTrigger: {
+      trigger: "#sectionPin",
+      start: "top 120",
     end: "bottom 262", 
     pin: true, 
     scrub: true,
