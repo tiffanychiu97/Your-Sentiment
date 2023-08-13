@@ -1,9 +1,13 @@
+// AOS
 AOS.init();
 
 
+// lazyload
 let images = document.querySelectorAll('img.lazyload');
 lazyload(images);
 
+
+//下滑收合選單
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
   var currentScrollPos = window.scrollY;
