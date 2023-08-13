@@ -1,3 +1,14 @@
+// loading
+$(document).ready(function () {
+  
+
+  setTimeout(function(){
+    $(`.loading-wrapper`).fadeOut(500);
+  }, 1000);
+
+})
+
+
 // 輪播
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +24,7 @@ gsap.to(".pin-wrap", {
     end: "bottom 262", 
     pin: true, 
     scrub: true,
-    snap: 0.35,
+    // snap: 0.25,
     // toggleClass: "active", //  class名稱 須為字串
     markers: false 
     }
@@ -22,12 +33,3 @@ gsap.to(".pin-wrap", {
 });
 
 
-// loading
-$(document).ready(function () {
-  
-
-  setTimeout(function(){
-    $(`.loading-wrapper`).fadeOut(500);
-  }, 1000);
-
-})

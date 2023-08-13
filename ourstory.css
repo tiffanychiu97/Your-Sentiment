@@ -36,6 +36,11 @@ h1{
 	width: 856px;
 	height: auto;
 	object-fit: cover;
+	animation: fadein 1.5s ease-in;
+}
+@keyframes fadein {
+    from{ opacity: 0; }
+    to{ opacity: 1; }
 }
 .txt-pic{
    display: flex;
@@ -44,8 +49,8 @@ h1{
    padding: 3% 10%;
    perspective: 2000px;
 	transform-style: preserve-3d;
-	height: 100%;   /* 添加一个高度以便滚动 */
-	overflow: hidden; /* 隐藏溢出内容 */
+	height: 100%;  
+	overflow: hidden; 
 }
 .fast {
 	transition: transform 0.5s ease;
