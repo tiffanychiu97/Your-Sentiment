@@ -457,7 +457,7 @@ body::-webkit-scrollbar {
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
-	.carousel{
-		display:none;
+	.mobile-remove{
+		display: none;
 	}
 }
