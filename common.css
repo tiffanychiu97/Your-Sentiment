@@ -26,13 +26,13 @@ img{
 }
 .loading{
 	position: absolute;
-	width: 400px;
+	width: 300px;
 	height: 100px;
 	inset:0;
 	margin: auto;
 }
 svg{
-	max-width: 600px;
+	max-width: 300px;
 	height: auto;
 }
 
