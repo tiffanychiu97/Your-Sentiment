@@ -1,5 +1,8 @@
+
 /* banner */
 .banner{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .banner-text{
@@ -9,8 +12,10 @@
 	/* flex-shrink: 0; */
 	/* box-sizing: border-box; */
 	padding: 11.3%;
-	animation: fadein 1.5s ease-in;
-	animation-delay: 1s;
+	-webkit-animation: fadein 1.5s ease-in;
+	        animation: fadein 1.5s ease-in;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 }
 .banner h1{
 	margin-top: 16.666666%;
@@ -53,6 +58,10 @@
 .banner > :first-child{
 	margin-right: -54.45%;
 }
+@-webkit-keyframes fadein {
+    from{ opacity: 0.5; }
+    to{ opacity: 1; }
+}
 @keyframes fadein {
     from{ opacity: 0.5; }
     to{ opacity: 1; }
@@ -65,6 +74,16 @@
 	-webkit-animation: pulse 2s infinite;
 	animation: pulse 2s infinite;
 }
+@-webkit-keyframes pulse {
+	0% {
+	  -webkit-transform: translate(0, 0);
+			  transform: translate(0, 0); }
+	50% {
+	  -webkit-transform: translate(0, 10px);
+			  transform: translate(0, 10px); }
+	100% {
+	  -webkit-transform: translate(0, 0);
+			  transform: translate(0, 0); } }
 @keyframes pulse {
 	0% {
 	  -webkit-transform: translate(0, 0);
@@ -129,7 +148,8 @@
 .intro-pic img{
 	width: 100vw;
 	display: block;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .intro-pic p{
 	color: #ffffff;
@@ -144,6 +164,8 @@
 }
 /* 裝置layout */
 .devices{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .devices-card-layout{
@@ -154,20 +176,23 @@
 	width: 35.416667%;
 	position: relative;
 	left: 8.611111%;
-	box-shadow: 4px 4px 5px #90908e;
+	-webkit-box-shadow: 4px 4px 5px #90908e;
+	        box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card-layout div:nth-child(2){
 	width: 41.25%;
 	position: relative;
 	left: 39.1666%;
 	bottom: 8.611111%;
-	box-shadow: 4px 4px 5px #90908e;
+	-webkit-box-shadow: 4px 4px 5px #90908e;
+	        box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card-layout div:nth-child(3){
 	width: 44.861111%;
 	position: relative;
 	bottom: 16.11111%;
-	box-shadow: 4px 4px 5px #90908e;
+	-webkit-box-shadow: 4px 4px 5px #90908e;
+	        box-shadow: 4px 4px 5px #90908e;
 }
 .devices-card{
 	border-radius: 5px;
@@ -179,9 +204,16 @@
 }
 .devices-text{
 	width: 40%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding-right: 6.6%;
 	padding-bottom: 8%;
 }
@@ -206,7 +238,9 @@
 	color: #DEE4EB;
 	width: 28px;
 	height: auto;
-	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	    -ms-transform: scaleX(-1);
+	        transform: scaleX(-1);
 	position: absolute;
 	bottom: -2.625em;
 	right: -2%;
@@ -214,8 +248,11 @@
 
 /* 跑馬燈裝飾線 */
 .deco-line{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-shrink: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	overflow: hidden;
 }
 .deco-line p{
@@ -224,23 +261,37 @@
 	color: #a3bad91a;
 	font-size: 9rem;
 	font-family: 'Roboto', sans-serif;
-	animation: scroll 40s linear infinite;
+	-webkit-animation: scroll 40s linear infinite;
+	        animation: scroll 40s linear infinite;
 }
 .deco-line p:nth-child(2){
-	animation: scroll2 40s linear infinite;
-    animation-delay: -20s;
+	-webkit-animation: scroll2 40s linear infinite;
+	        animation: scroll2 40s linear infinite;
+    -webkit-animation-delay: -20s;
+            animation-delay: -20s;
 }
+@-webkit-keyframes scroll{
+	from{-webkit-transform: translateX(100%);transform: translateX(100%)}
+	to{-webkit-transform: translateX(-100%);transform: translateX(-100%)}
+  }
 @keyframes scroll{
-	from{transform: translateX(100%)}
-	to{transform: translateX(-100%)}
+	from{-webkit-transform: translateX(100%);transform: translateX(100%)}
+	to{-webkit-transform: translateX(-100%);transform: translateX(-100%)}
+  }
+  
+@-webkit-keyframes scroll2{
+	from{-webkit-transform: translateX(0%);transform: translateX(0%)}
+	to{-webkit-transform: translateX(-200%);transform: translateX(-200%)}
   }
   
 @keyframes scroll2{
-	from{transform: translateX(0%)}
-	to{transform: translateX(-200%)}
+	from{-webkit-transform: translateX(0%);transform: translateX(0%)}
+	to{-webkit-transform: translateX(-200%);transform: translateX(-200%)}
   }
 /* intro of personalization */
 .intro-personalization{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding-bottom: 85px;
 	background-image: url(image/index/bgc-noise-warm.jpg);
@@ -277,6 +328,8 @@
 	height: 100vh;
 }
 .carousel{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	max-width: 100%;
 	margin-bottom: 100px;
@@ -286,7 +339,8 @@
 	max-width: 425px;
 	width: 100%;
 	margin: 5% 0.5%;
-	flex-shrink: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	top: 0 !important;
 	position: initial !important;
 }
@@ -294,7 +348,8 @@
 	max-width: 100%;
 	height: 100%;
 	display: block;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	/* transition: transform .6s ease; */
 }
 body::-webkit-scrollbar {
@@ -302,8 +357,12 @@ body::-webkit-scrollbar {
 }
 /* 睡眠 */
 .sleep-intro{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .sleep-intro-pic{
 	width: 47.75%;
@@ -314,9 +373,16 @@ body::-webkit-scrollbar {
 .sleep-intro-txt{
 	width: 35.416667%;
 	background-color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: 6.349206%;
     padding-bottom: 4.365079%;
     padding-left: 3.174603%;
@@ -335,7 +401,8 @@ body::-webkit-scrollbar {
 	line-height: 1.2;
 }
 .sleep-intro-txt a{
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 }
 
 @media screen and (max-width: 1180px){
@@ -358,7 +425,8 @@ body::-webkit-scrollbar {
 		margin-bottom: 0px;
 	}
 	.banner, .intro, .devices, .intro-personalization, .sleep-intro{
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 	.banner > :first-child{
 		margin-right: 0;
@@ -372,7 +440,8 @@ body::-webkit-scrollbar {
 		background-image: url(image/index/banner-edit.jpg);
 		background-position: top;
 		background-size: cover;
-		animation: none;
+		-webkit-animation: none;
+		        animation: none;
 	}
 	.banner h1{
 		margin-top: 2%;
