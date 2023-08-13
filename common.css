@@ -153,6 +153,7 @@ header{
 	border: 1px solid #3E4459;
 	font-size: 16px;
 	font-family: 'Inter', sans-serif;
+	cursor: pointer;
 }
 /* footer */
 footer{

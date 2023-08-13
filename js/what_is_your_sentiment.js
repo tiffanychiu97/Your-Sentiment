@@ -19,3 +19,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+$(function (){
+$(window).scroll(function (){
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+  
+    $('.typing1').each(function (){
+      var thisPos = $(this).offset().top;
+      if ((windowHeight + scrollPos) >= thisPos){
+        $(`.typing1 span::after`).css("animation", "typing 3s steps(25) forwards");
+      };
+    });
+  });
+})
