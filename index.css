@@ -413,7 +413,7 @@ body::-webkit-scrollbar {
 		padding-right: 0;
 	}
 	.intro-personalization-pic{
-		display: none;
+		width: 90%;
 	}
 	.carousel-item{
 		max-width: 300px;
@@ -457,7 +457,7 @@ body::-webkit-scrollbar {
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
-	.mobile-remove{
+	#sectionPin{
 		display: none;
 	}
 }
