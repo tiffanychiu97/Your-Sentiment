@@ -422,7 +422,7 @@ body::-webkit-scrollbar {
 	.carousel-item img {
 		height: 100vh;
 	}
-	.carousel .carousel-item:last-child{
+	.tablet-remove{
 		display: none;
 	}
 	.pin-wrap{
@@ -457,7 +457,7 @@ body::-webkit-scrollbar {
 	.intro-personalization-text p{
 		line-height: 1.5;
 	}
-	.mobile-remove{
+	.carousel{
 		display:none;
 	}
 }
