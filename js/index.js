@@ -2,8 +2,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
 "(min-width: 200px)": () => {
+  let pinWrap = $(`.pin-wrap`)
+  let pinWrapWidth = pinWrap.width()
 gsap.to(".pin-wrap", {
-  x: -1550,
+  x: -pinWrapWidth,
   scrollTrigger: {
     trigger: "#sectionPin", 
     start: "top 100", // (物件開始位置, 卷軸開始位置) top center bottom px
