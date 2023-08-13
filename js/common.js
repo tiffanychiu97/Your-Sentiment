@@ -1,7 +1,10 @@
+AOS.init();
+
+
 let images = document.querySelectorAll('img.lazyload');
 lazyload(images);
 
-AOS.init();
+
 
 // $(document).ready(function() {
     

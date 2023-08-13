@@ -42,6 +42,16 @@ h1{
    flex-wrap: wrap;
    justify-content: center;
    padding: 3% 10%;
+   perspective: 2000px;
+	transform-style: preserve-3d;
+	height: 100%;   /* 添加一个高度以便滚动 */
+	overflow: hidden; /* 隐藏溢出内容 */
+}
+.fast {
+	transition: transform 0.5s ease;
+}
+.slow {
+	transition: transform 0.5s ease;
 }
 .row-reverse{
 	flex-direction: row-reverse;
