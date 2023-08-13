@@ -52,12 +52,7 @@ h1{
 	height: 100%;  
 	overflow: hidden; 
 }
-.fast {
-	transition: transform 0.5s ease;
-}
-.slow {
-	transition: transform 0.5s ease;
-}
+
 .row-reverse{
 	flex-direction: row-reverse;
 }
@@ -97,6 +92,14 @@ h1{
 
 
   /* RWD */
+  @media screen and (min-width: 1000px){
+	.fast {
+		transition: transform 0.5s ease;
+	}
+	.slow {
+		transition: transform 0.5s ease;
+	}
+  }
   @media screen and (max-width: 768px){
 	h1{
 		font-size: 35px;
@@ -118,12 +121,6 @@ h1{
 		font-size: 16px;
 		text-align: left;
 	}
-	.fast {
-		transition: none;
-	}
-	.slow {
-		transition: none;
-	}
   }
 
   @media screen and (max-width: 414px){
@@ -136,3 +133,5 @@ h1{
 		line-height: 1.5;		
   	}
   }
+
+ 
