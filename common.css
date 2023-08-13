@@ -27,7 +27,7 @@ img{
 .loading{
 	position: absolute;
 	width: 300px;
-	height: 100px;
+	height: 60px;
 	inset:0;
 	margin: auto;
 }
@@ -35,7 +35,9 @@ svg{
 	max-width: 300px;
 	height: auto;
 }
-
+/* html{
+	cursor: url('image/cursor.svg'), auto;
+} */
 body{
     background-color: #F7F5F2;
 	font-family: var(--main-font-family);

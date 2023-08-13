@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cursor{
+            border:1px solid blue;
+            width: 30px;
+            height: 30px;
+        }
+    html{
+    background-color: #F7F5F2;
+	font-family: var(--main-font-family);
+    }
+    
+    .cursor {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none; /* 让光标不影响元素的交互 */
+  transform: translate(-50%, -50%);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="cursor">
+        
+    </div>
+
+    <div class="cursor"></div>
+</body>
+</html>
