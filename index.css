@@ -295,7 +295,7 @@
 	height: 100%;
 	display: block;
 	object-fit: cover;
-	transition: transform .6s ease;
+	/* transition: transform .6s ease; */
 }
 body::-webkit-scrollbar {
     display: none;
@@ -351,12 +351,8 @@ body::-webkit-scrollbar {
 	.carousel-item{
 		max-width: 350px;
 	}
-	.carousel-item{
-		margin: 1% 0.5%;
-	}
 }
 
-/* RWD */
 @media screen and (max-width: 768px){ 
 	header{
 		margin-bottom: 0px;
@@ -415,21 +411,8 @@ body::-webkit-scrollbar {
 	.intro-personalization-pic{
 		width: 90%;
 	}
-	.carousel-item{
-		max-width: 300px;
-		margin: 1% 0.5%;
-	}
-	.carousel-item img {
-		height: 100vh;
-	}
-	.tablet-remove{
-		display: none;
-	}
-	.pin-wrap{
-		width:100%;
-	}
 	#sectionPin{
-		margin-bottom: 50px;
+		display: none;
 	}
 	.sleep-intro-pic {
 		margin-top: 100px;
@@ -456,8 +439,5 @@ body::-webkit-scrollbar {
 	}
 	.intro-personalization-text p{
 		line-height: 1.5;
-	}
-	#sectionPin{
-		display: none;
 	}
 }

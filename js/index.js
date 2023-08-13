@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
 
-"(min-width: 300px)": () => {
+"(min-width: 768px)": () => {
   let pinWrap = $(`.pin-wrap`)
   let pinWrapWidth = pinWrap.width()
   gsap.to(".pin-wrap", {
