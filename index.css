@@ -358,6 +358,7 @@ body::-webkit-scrollbar {
 		background-image: url(image/index/banner-edit.jpg);
 		background-position: top;
 		background-size: cover;
+		animation: none;
 	}
 	.banner h1{
 		margin-top: 2%;
