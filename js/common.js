@@ -2,9 +2,6 @@
 AOS.init();
 
 
-// lazyload
-let images = document.querySelectorAll('img.lazyload');
-lazyload(images);
 
 
 //下滑收合選單

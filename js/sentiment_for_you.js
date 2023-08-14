@@ -27,3 +27,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// lazyload
+let images = document.querySelectorAll('img.lazyload');
+lazyload(images);
