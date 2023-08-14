@@ -122,10 +122,10 @@ h1{
 		text-align: left;
 	}
 	.fast {
-		transform: none;
+		transform: none !important;
 	}
 	.slow {
-		transform: none;
+		transform: none !important;
 	}
   }
 

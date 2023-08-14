@@ -33,4 +33,9 @@ ScrollTrigger.matchMedia({
   }
 });
 
+// lazyload
+let images = document.querySelectorAll('img.lazyload');
+lazyload(images);
 
+// AOS
+AOS.init();

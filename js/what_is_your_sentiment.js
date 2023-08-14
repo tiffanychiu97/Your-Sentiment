@@ -19,3 +19,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// lazyload
+let images = document.querySelectorAll('img.lazyload');
+lazyload(images);
+
+// AOS
+AOS.init();
