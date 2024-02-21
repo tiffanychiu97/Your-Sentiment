@@ -333,7 +333,6 @@
 	display: flex;
 	max-width: 100%;
 	margin-bottom: 100px;
-	background-image: url(image/index/bgc-noise-warm.jpg);
 }
 .carousel-item{
 	max-width: 425px;
