@@ -1,3 +1,5 @@
+import './common.js'
+
 $(document).ready( function(){
 
    $(window).scroll(function() {

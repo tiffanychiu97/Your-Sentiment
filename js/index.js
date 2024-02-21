@@ -1,3 +1,4 @@
+import './common.js'
 // loading
 $(document).ready(function () {
   
@@ -36,6 +37,3 @@ ScrollTrigger.matchMedia({
 // lazyload
 let images = document.querySelectorAll('img.lazyload');
 lazyload(images);
-
-// AOS
-AOS.init();

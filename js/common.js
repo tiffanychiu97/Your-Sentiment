@@ -1,13 +1,10 @@
 // AOS
 AOS.init();
 
-
-
-
 //下滑收合選單
-var prevScrollpos = window.scrollY;
+let prevScrollpos = window.scrollY;
 window.onscroll = function() {
-  var currentScrollPos = window.scrollY;
+  let currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
